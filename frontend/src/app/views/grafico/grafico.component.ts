@@ -10,6 +10,10 @@ export class GraficoComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+  
   }
 
 }
+
+
+

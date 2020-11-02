@@ -17,8 +17,7 @@ displayedColumns = ['id', 'city', 'stateCode', 'quantity', 'confirmed', 'recover
 
   ngOnInit(): void {
     this.citiesService.read().subscribe(cities => {
-      this.cities = cities 
-      console.log(cities)
+      this.cities = cities
     })
   }
 

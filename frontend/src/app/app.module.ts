@@ -17,10 +17,10 @@ import { GraficoComponent } from './views/grafico/grafico.component';
 import { CitiesComponent } from './components/cities/cities.component';
 import { HttpClientModule } from '@angular/common/http';
 import { CitiesReadComponent } from './components/cities/cities-read/cities-read.component';
-import { CitiesRead2Component } from './components/cities/cities-read2/cities-read2.component';
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
+import { CitiesChartComponent } from './components/cities/cities-chart/cities-chart.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +33,7 @@ import { MatSortModule } from '@angular/material/sort';
     GraficoComponent,
     CitiesComponent,
     CitiesReadComponent,
-    CitiesRead2Component
+    CitiesChartComponent
   ],
   imports: [
     BrowserModule,
