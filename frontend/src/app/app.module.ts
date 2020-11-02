@@ -14,6 +14,13 @@ import { HomeComponent } from './views/home/home.component';
 //import { MatCardModule } from '@angular/material/card';
 import { DadosComponent } from './views/dados/dados.component';
 import { GraficoComponent } from './views/grafico/grafico.component';
+import { CitiesComponent } from './components/cities/cities.component';
+import { HttpClientModule } from '@angular/common/http';
+import { CitiesReadComponent } from './components/cities/cities-read/cities-read.component';
+import { CitiesRead2Component } from './components/cities/cities-read2/cities-read2.component';
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
 
 @NgModule({
   declarations: [
@@ -23,7 +30,10 @@ import { GraficoComponent } from './views/grafico/grafico.component';
     NavComponent,
     HomeComponent,
     DadosComponent,
-    GraficoComponent
+    GraficoComponent,
+    CitiesComponent,
+    CitiesReadComponent,
+    CitiesRead2Component
   ],
   imports: [
     BrowserModule,
@@ -32,6 +42,10 @@ import { GraficoComponent } from './views/grafico/grafico.component';
     MatToolbarModule,
     MatSidenavModule,
     MatListModule,
+    HttpClientModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule
   //  MatCardModule
   ],
   providers: [],
