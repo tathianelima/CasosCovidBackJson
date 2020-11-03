@@ -11,16 +11,12 @@ import { NavComponent } from './components/template/nav/nav.component';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import { HomeComponent } from './views/home/home.component';
-//import { MatCardModule } from '@angular/material/card';
 import { DadosComponent } from './views/dados/dados.component';
 import { GraficoComponent } from './views/grafico/grafico.component';
-import { CitiesComponent } from './components/cities/cities.component';
 import { HttpClientModule } from '@angular/common/http';
-import { CitiesReadComponent } from './components/cities/cities-read/cities-read.component';
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
-import { CitiesChartComponent } from './components/cities/cities-chart/cities-chart.component';
 
 @NgModule({
   declarations: [
@@ -30,10 +26,7 @@ import { CitiesChartComponent } from './components/cities/cities-chart/cities-ch
     NavComponent,
     HomeComponent,
     DadosComponent,
-    GraficoComponent,
-    CitiesComponent,
-    CitiesReadComponent,
-    CitiesChartComponent
+    GraficoComponent
   ],
   imports: [
     BrowserModule,
@@ -46,7 +39,6 @@ import { CitiesChartComponent } from './components/cities/cities-chart/cities-ch
     MatTableModule,
     MatPaginatorModule,
     MatSortModule
-  //  MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

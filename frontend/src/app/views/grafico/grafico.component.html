@@ -1,1 +1,3 @@
-<app-cities-chart></app-cities-chart>
+<div *ngIf="chart" class="chart">
+    <canvas id="canvas">{{ chart }}</canvas>
+</div>

@@ -1,2 +1,56 @@
 <p>Registro de casos de Covid por cidade</p>
-<app-cities-read></app-cities-read>
+<div class="mat-elevation-z4">
+    <table mat-table [dataSource]="cities">
+      <!-- Id Column -->
+      <ng-container matColumnDef="id">
+        <th mat-header-cell *matHeaderCellDef >Id</th>
+        <td mat-cell *matCellDef="let row">{{row.id}}</td>
+      </ng-container>
+  
+      <!-- City Column -->
+      <ng-container matColumnDef="city"> 
+        <th mat-header-cell *matHeaderCellDef>City</th>
+        <td mat-cell *matCellDef="let row">{{row.city}}</td>
+      </ng-container>
+
+      <!-- StateCode Column -->
+      <ng-container matColumnDef="stateCode">
+        <th mat-header-cell *matHeaderCellDef>State Code</th>
+        <td mat-cell *matCellDef="let row">{{row.stateCode}}</td>
+      </ng-container>
+
+      <!-- Quantity Column -->
+      <ng-container matColumnDef="quantity">
+        <th mat-header-cell *matHeaderCellDef>Quantity</th>
+        <td mat-cell *matCellDef="let row">{{row.quantity}}</td>
+      </ng-container>
+
+      <!-- Confirmed Column -->
+      <ng-container matColumnDef="confirmed">
+        <th mat-header-cell *matHeaderCellDef>Confirmed</th>
+        <td mat-cell *matCellDef="let row">{{row.confirmed}}</td>
+      </ng-container>
+
+      <!-- Recovered Column -->
+      <ng-container matColumnDef="recovered">
+        <th mat-header-cell *matHeaderCellDef>Recovered</th>
+        <td mat-cell *matCellDef="let row">{{row.recovered}}</td>
+      </ng-container>
+
+      <!-- Deaths Column -->
+      <ng-container matColumnDef="deaths">
+        <th mat-header-cell *matHeaderCellDef>Deaths</th>
+        <td mat-cell *matCellDef="let row">{{row.deaths}}</td>
+      </ng-container>
+
+      <!-- Suspected Column -->
+      <ng-container matColumnDef="suspected">
+        <th mat-header-cell *matHeaderCellDef>Suspected</th>
+        <td mat-cell *matCellDef="let row">{{row.suspected}}</td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+   
+  </div>
